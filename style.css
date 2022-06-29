@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EFF3F8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+.boxshadow {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 1px rgba(196, 196, 196, 0.2),
+        -2px -2px 2px 1px rgba(224, 224, 224, 0.2);
+}
+
+/* NAVBAR */
+header>div {
+    background: url(.//img/patternECOStransparente.png), linear-gradient(to bottom right, #295ba7, #78b454);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 0 10px;
+}
+
+.navbar img {
+    margin-right: 15px;
+}
+
+.navbar span {
+    font-size: 22px;
+    color: white;
+    padding: 8px 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar span:hover {
+    background-color: rgba(9, 48, 56, 0.5);
+}
+
+.navbar input {
+    margin-left: 10px;
+    width: 400px;
+    height: 30px;
+    background-color: rgba(9, 48, 56, 0.1);
+    border: none;
+}
+
+.navbar input::placeholder {
+    padding: 10px;
+    color: white;
+}
+
+.navbar input:focus {
+    border: 1px solid #33A76F;
+    outline: 0;
+}
+
+.fa-bars {
+    color: white;
+    padding: 0 10px;
+    font-size: 21px;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.perfil a {
+    color: white;
+    font-size: 26px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.perfil img {
+    border-radius: 100%;
+}
+
+.perfil svg {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+/* MAIN */
+
+main {
+    display: flex;
+}
+
+.content {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: rgba(247, 247, 247, 0.774);
+    width: 675px;
+    height: 1200px;
+    margin: 15px;
+}
+
+.colorhr {
+    color: #007bff;
+}
+
+.content>div {
+    display: flex;
+    align-items: center;
+    margin: AUTO;
+    width: 645px;
+    height: 216px;
+    cursor: pointer;
+}
+
+
+.content h3,
+aside h3 {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px;
+    color: #333;
+}
+
+.content div h3 {
+    padding: 15px;
+}
+
+.content p {
+    font-weight: 300;
+    font-size: 14px;
+    padding: 0 15px 15px 15px;
+}
+
+.content img {
+    max-width: 200px;
+    border-radius: 15px;
+    margin-left: 8px;
+}
+
+.content span {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #999;
+    padding: 8px 15px;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.content i {
+    font-size: 16px;
+}
+
+.container div i {
+    margin: 0 3px;
+    padding: 5px;
+}
+
+/* ASIDE */
+aside {
+    width: 450px;
+    margin: 15px 0 15px 0;
+}
+
+/* SISTEMAS BOTOES */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(247, 247, 247);
+    width: 450px;
+    height: 350px;
+    padding: auto;
+    margin-bottom: 15px;
+}
+
+.grid>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 90px;
+    margin: auto;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 1px rgba(175, 175, 175, 0.2),
+        -2px -2px 2px 1px rgba(194, 194, 194, 0.2);
+}
+
+.grid>div:hover {
+    background: linear-gradient(#33A76F, #007bff);
+    border: none;
+    box-shadow: none;
+}
+
+.grid i:hover,
+.grid span:hover {
+    color: white;
+}
+
+.grid i {
+    color: #33A76F;
+    font-size: 37px;
+}
+
+.grid span {
+    color: #33A76F;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ANIVERSÁRIOS */
+.niver {
+    width: 450px;
+    height: 900px;
+}
+
+.niver>div {
+    height: 90px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.niver img {
+    margin: 10px;
+    border-radius: 100%;
+}
+
+.niver>div>div h4 {
+    margin-bottom: 8px;
+}
+
+.niver a {
+    color: #999;
+    font-size: 14px;
+}
+
+.fa-cake-candles {
+    color: #999;
+    font-size: 14px;
+}
